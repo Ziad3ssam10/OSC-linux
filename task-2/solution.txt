@@ -1,0 +1,19 @@
+git config --global user.name 
+git config --global user.email
+git clone https://github.com/Ziad3ssam10/OSC-linux
+cd OSC-linux
+mkdir task-2
+cd task-2
+touch greeting.txt
+echo 'Hello world' > greeting.txt
+git add greeting.txt
+git commit -m 'added'
+git checkout -b intro
+echo 'i love git' > greeting.txt
+git add greeting.txt
+git commit -m 'addedd'
+git checkout main 
+git merge intro
+git push origin main
+
+
