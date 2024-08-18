@@ -5,15 +5,18 @@ cd OSC-linux
 mkdir task-2
 cd task-2
 touch greeting.txt
-echo 'Hello world' > greeting.txt
+echo 'Hello world!' > greeting.txt
 git add greeting.txt
 git commit -m 'added'
 git checkout -b intro
-echo 'i love git' > greeting.txt
+echo 'I love git' > greeting.txt
 git add greeting.txt
 git commit -m 'addedd'
 git checkout main 
 git merge intro
+git tag v1
 git push origin main
+git push origin v1
+
 
 
