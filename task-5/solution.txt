@@ -1,3 +1,0 @@
-((grep -o "[a-z0-9A-Z]\+\.[a-z0-9A-Z]\+\@[a-z0-9A-Z]\+\.[a-z0-9A-Z]\+" info.csv | sort) | uniq) | tee > email.txt
-ps -e -o pid,cmd --sort=cmd | tee >> processes.txt
-s
